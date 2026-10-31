@@ -1,0 +1,35 @@
+{
+  "target": "Attrition",
+  "features": [
+    "Age",
+    "Gender",
+    "Years at Company",
+    "Job Role",
+    "Monthly Income",
+    "Work-Life Balance",
+    "Job Satisfaction",
+    "Performance Rating",
+    "Number of Promotions",
+    "Overtime",
+    "Distance from Home",
+    "Education Level",
+    "Marital Status",
+    "Number of Dependents",
+    "Job Level",
+    "Company Size",
+    "Company Tenure",
+    "Remote Work",
+    "Leadership Opportunities",
+    "Innovation Opportunities",
+    "Company Reputation",
+    "Employee Recognition"
+  ],
+  "dropped": [
+    "Employee ID"
+  ],
+  "classes": [
+    "Left",
+    "Stayed"
+  ],
+  "positive": "Left"
+}

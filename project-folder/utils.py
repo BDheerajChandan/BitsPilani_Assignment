@@ -7,13 +7,16 @@ from sklearn.metrics import (
     recall_score, f1_score, matthews_corrcoef,
 )
 
-META_PATH = "model/meta.json"
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+META_PATH = BASE_DIR / "model" / "meta.json"
 MODEL_FILES = {
-    "Logistic Regression": "model/logistic_regression.joblib",
-    "Decision Tree": "model/decision_tree.joblib",
-    "KNN": "model/knn.joblib",
-    "Naive Bayes": "model/naive_bayes.joblib",
-    "Support Vector Machine": "model/svm.joblib",
+    "Logistic Regression": BASE_DIR / "model" / "logistic_regression.joblib",
+    "Decision Tree": BASE_DIR / "model" / "decision_tree.joblib",
+    "KNN": BASE_DIR / "model" / "knn.joblib",
+    "Naive Bayes": BASE_DIR / "model" / "naive_bayes.joblib",
+    "Support Vector Machine": BASE_DIR / "model" / "svm.joblib",
 }
 
 
