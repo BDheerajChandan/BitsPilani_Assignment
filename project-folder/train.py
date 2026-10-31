@@ -46,6 +46,7 @@ assert len(features) >= 12 and len(df) >= 500, "Dataset below assignment minimum
 # split
 train_df, test_df = train_test_split(
     df[features + [target]], test_size=0.2, stratify=df[target], random_state=SEED)
+test_df.to_csv("test_data.csv", index=False)
 
 X_train, y_train = prepare(train_df, meta)
 X_test, y_test = prepare(test_df, meta)

@@ -45,7 +45,7 @@ All five models were evaluated on the same 11,920-row hold-out test set.
 | **Overall winner** | **Logistic Regression.** It leads on accuracy, AUC, precision, F1 and MCC, with SVM a very close second. It is also the simplest, fastest and most interpretable model. Naive Bayes is the best alternative when recall is the priority. |
 
 ## Streamlit App Features
-- Upload a test CSV (`test.csv` from this repo). The CSV must contain all input features and the `Attrition` column.
+- Upload a test CSV (`test_data.csv` from this repo). The CSV must contain all input features and the `Attrition` column.
 - Model selection dropdown (5 models)
 - Evaluation metrics: Accuracy, AUC, Precision, Recall, F1, MCC
 - Confusion matrix and classification report
