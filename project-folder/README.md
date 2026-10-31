@@ -55,6 +55,10 @@ All five models were evaluated on the same 11,920-row hold-out test set.
 ## Live app
 https://bitspilani-ml-assignment2.streamlit.app/
 
+## Model Evaluation metrics
+- project-folder/model_comparision.csv
+- project-folder/model_observation.csv
+
 ## Run locally
 ```
 pip install -r requirements.txt

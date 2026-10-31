@@ -1,0 +1,7 @@
+ML Model Name,Observation about model performance
+Logistic Regression,"Best overall: highest accuracy (0.7499), AUC (0.8396), precision, F1 and MCC (0.4984). Balanced precision and recall, fast to train and easy to interpret."
+Decision Tree,"Moderate performance (accuracy 0.7187, AUC 0.7792). Recall (0.7369) is decent but precision (0.6917) is lower, so it gives more false alarms. A single depth-limited tree captures feature relationships less well than the linear models."
+KNN,"Weakest model (accuracy 0.6803, MCC 0.3599). Distance-based voting degrades after one-hot encoding increases dimensionality, and prediction is slow on a large dataset."
+Naive Bayes,"Highest recall (0.7646), so it catches the most employees who leave, but precision is lower (0.6862). AUC (0.8048) is decent despite the feature-independence assumption. Suitable when missing a leaver costs more than a false alarm."
+Support Vector Machine,"Nearly matches Logistic Regression (accuracy 0.7483, AUC 0.8349, MCC 0.4952) despite training on a 20000-row sample. The RBF kernel gave no gain over the linear model, suggesting the classes are largely linearly separable. Slower to train and predict."
+Overall Winner for your dataset?,"Logistic Regression: leads on accuracy, AUC, precision, F1 and MCC, with SVM a close second. It is also the simplest, fastest and most interpretable. Naive Bayes is the best alternative if recall is the priority."
