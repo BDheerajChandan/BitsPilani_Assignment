@@ -4,7 +4,7 @@
 Predict whether an employee will leave the company (attrition) from demographic, job and workplace features, by comparing five classification models and deploying them in an interactive Streamlit app.
 
 ## b. Dataset description
-- Source: <Kaggle link>
+- Source: [<Kaggle link>](https://www.kaggle.com/datasets/stealthtechnologies/employee-attrition-dataset)
 - Instances: <rows> | Features: <n> | Target: `<target>` (binary: <classes>)
 - Preprocessing: ID/constant columns dropped, median/mode imputation, standard scaling for numeric, one-hot encoding for categorical, 80/20 stratified split (seed 42).
 

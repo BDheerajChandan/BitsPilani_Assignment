@@ -17,7 +17,7 @@ from sklearn.tree import DecisionTreeClassifier
 
 from utils import MODEL_FILES, prepare, evaluate
 
-DATA = "Employee_attrition.csv"
+DATA = "train.csv"
 SEED = 42
 SVM_MAX_ROWS = 20000
 
@@ -43,10 +43,9 @@ meta = {"target": target, "features": features, "dropped": drop_cols,
 print("Target:", target, "| Positive:", positive, "| Features:", len(features))
 assert len(features) >= 12 and len(df) >= 500, "Dataset below assignment minimums"
 
-# split; keep raw columns in test_data.csv
+# split
 train_df, test_df = train_test_split(
     df[features + [target]], test_size=0.2, stratify=df[target], random_state=SEED)
-test_df.to_csv("test_data.csv", index=False)
 
 X_train, y_train = prepare(train_df, meta)
 X_test, y_test = prepare(test_df, meta)
